@@ -50,11 +50,7 @@ jobs:
       - name: Install CocoaPods
         run: |
           cd ios
-          rm -rf Pods
-          pod cache clean --all
-          pod deintegrate
-          pod setup
-          pod install
+          pod install --repo-update
 
       #6 Setup Android Keystore
       - name: Decode Keystore
