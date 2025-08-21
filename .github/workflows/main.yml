@@ -46,11 +46,7 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      #5 FIX: Install iOS CocoaPods Dependencies
-      - name: Install CocoaPods
-        run: |
-          cd ios
-          pod install --repo-update
+
 
       #6 Setup Android Keystore
       - name: Decode Keystore
